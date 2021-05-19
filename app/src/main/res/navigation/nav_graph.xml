@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeScreen_Fragment">
+
+    <fragment
+        android:id="@+id/welcomeScreen_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.WelcomeScreen_Fragment"
+        android:label="fragment_welcome_screen_"
+        tools:layout="@layout/fragment_welcome_screen_" >
+        <action
+            android:id="@+id/action_welcomeScreen_Fragment_to_registeration_Fragment"
+            app:destination="@id/registeration_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_welcomeScreen_Fragment_to_home_Fragment"
+            app:destination="@id/home_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registeration_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Registeration_Fragment"
+        android:label="fragment_registeration_"
+        tools:layout="@layout/fragment_registeration_">
+        <argument android:name="register_sort"
+            app:nullable="false"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_registeration_Fragment_to_home_Fragment"
+            app:destination="@id/home_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_home_Fragment_to_featured_Fragment"
+            app:destination="@id/featured_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_Fragment_to_cart_Fragment"
+            app:destination="@id/cart_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_Fragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_Fragment_to_orders_Fragment"
+            app:destination="@id/orders_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_Fragment_to_favourite_Fragment"
+            app:destination="@id/favourite_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/featured_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Featured_Fragment"
+        android:label="fragment_featured_"
+        tools:layout="@layout/fragment_featured_" />
+    <fragment
+        android:id="@+id/cart_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Cart_Fragment"
+        android:label="fragment_cart_"
+        tools:layout="@layout/fragment_cart_" />
+    <fragment
+        android:id="@+id/productDetails_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.ProductDetails_Fragment"
+        android:label="fragment_product_details_"
+        tools:layout="@layout/fragment_product_details_" />
+    <fragment
+        android:id="@+id/profile_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Profile_Fragment"
+        android:label="fragment_profile_"
+        tools:layout="@layout/fragment_profile_" />
+    <fragment
+        android:id="@+id/orders_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Orders_Fragment"
+        android:label="fragment_orders_"
+        tools:layout="@layout/fragment_orders_" />
+    <fragment
+        android:id="@+id/favourite_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Favourite_Fragment"
+        android:label="fragment_favourite_"
+        tools:layout="@layout/fragment_favourite_" />
+    <fragment
+        android:id="@+id/confirmation_Fragment"
+        android:name="com.mahmoudbashir.shopapp.Confirmation_Fragment"
+        android:label="fragment_confirmation_"
+        tools:layout="@layout/fragment_confirmation_" />
+    <fragment
+        android:id="@+id/checkout_Fragment"
+        android:name="com.mahmoudbashir.shopapp.Checkout_Fragment"
+        android:label="fragment_checkout_"
+        tools:layout="@layout/fragment_checkout_" />
+</navigation>

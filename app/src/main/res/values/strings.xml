@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Shop app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_f_string">Welcome to</string>
+    <string name="welcome_s_string">Bolt</string>
+    <string name="explore_string">Explore Us</string>
+    <string name="login_string">Login </string>
+    <string name="singup_string">Signup </string>
+    <string name="singin_string">Sign in </string>
+    <string name="regist_q_signup">Don\'t have an account?</string>
+    <string name="regist_q_login">Already have an account?</string>
+    <string name="search_txt">Search Your Product</string>
+    <string name="categories_txt">Categories</string>
+    <string name="seeAll_txt">See all</string>
+    <string name="featured_txt">Featured</string>
+    <string name="cart_txt">Cart</string>
+    <string name="profile_txt">Profile</string>
+    <string name="best_sell_txt">Best Sell</string>
+    <string name="women_txt">Woman T-Shirt</string>
+    <string name="men_txt">Man T-Shirt</string>
+    <string name="kids_txt">Kids T-Shirt</string>
+    <string name="continue_txt">Continue</string>
+    <string name="add_to_cart_txt">ADD TO CART</string>
+    <string name="buy_now_txt">BUY NOW</string>
+    <string name="select_size_txt">Select Size</string>
+    <string name="select_color_txt">Select Color</string>
+    <string name="description_txt">Description</string>
+    <string name="bad_txt">Bad</string>
+    <string name="good_txt">Good</string>
+    <string name="very_good_txt">Very Good</string>
+    <string name="excellent_txt">Excellent</string>
+
+    <!-- profile fragment-->
+    <string name="name_text">Name</string>
+    <string name="address_line_text">Address Line</string>
+    <string name="city_text">City</string>
+    <string name="gender_text">Gender</string>
+    <string name="email_text">Email</string>
+    <string name="phone_no_text">Phone Number</string>
+    <string name="save_btn_text">Save</string>
+
+    <!-- favourite fragment-->
+    <string name="fav_text">Favourite</string>
+
+    <!-- orders fragment-->
+    <string name="orders_text">My Orders</string>
+    <string name="order_again_btn_text">Order Again</string>
+
+    <!-- confirmation fragment-->
+    <string name="confirmation_txt">Confirmation</string>
+    <string name="confirmation_message_txt">You have successfully \n completed your payment procedure</string>
+    <string name="bac_to_home_btn_txt">Back to Home</string>
+
+    <!-- checkout fragment -->
+    <string name="checkout_txt">Checkout</string>
+    <string name="subtotal_txt">Subtotal</string>
+    <string name="discount_txt">Discount</string>
+    <string name="shipping_txt">Shipping</string>
+    <string name="total_txt">Total</string>
+    <string name="buy_txt">Buy</string>
+
+</resources>

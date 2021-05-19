@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Confirmation_Fragment"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rel_like"
+            android:layout_width="238dp"
+            android:layout_height="238dp"
+            android:background="@drawable/big_oval_confirmation"
+            android:layout_marginTop="228dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="154dp"
+                android:layout_height="154dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/small_oval_confirmation">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/fac_like" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/rel_like"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmation_txt"
+                android:textSize="25sp"
+                android:textColor="@color/main_txt_color"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmation_message_txt"
+                android:textSize="18sp"
+                android:textColor="#656565"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back_to_home_btn"
+            android:layout_width="326dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/register_btn_back"
+            android:text="@string/bac_to_home_btn_txt"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</layout>
