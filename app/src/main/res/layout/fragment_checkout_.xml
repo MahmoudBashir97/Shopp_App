@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Checkout_Fragment">
+        tools:context=".fragments.Checkout_Fragment">
 
         <ScrollView
             android:layout_width="match_parent"

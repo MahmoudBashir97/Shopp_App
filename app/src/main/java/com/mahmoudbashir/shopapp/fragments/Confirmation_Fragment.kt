@@ -1,4 +1,4 @@
-package com.mahmoudbashir.shopapp
+package com.mahmoudbashir.shopapp.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import com.mahmoudbashir.shopapp.R
 import com.mahmoudbashir.shopapp.databinding.FragmentConfirmationBinding
 
 
@@ -17,7 +18,7 @@ class Confirmation_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-         confBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_confirmation_, container, false)
+         confBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_confirmation_, container, false)
         backToHome()
         return confBinding.root
     }

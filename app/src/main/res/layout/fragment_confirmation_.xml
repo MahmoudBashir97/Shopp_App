@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Confirmation_Fragment"
+        tools:context=".fragments.Confirmation_Fragment"
         android:background="@color/white">
 
         <RelativeLayout

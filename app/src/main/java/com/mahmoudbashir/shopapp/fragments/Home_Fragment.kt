@@ -11,14 +11,22 @@ import android.widget.TextView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
 import com.mahmoudbashir.shopapp.R
+import com.mahmoudbashir.shopapp.adapters.categories_Adapter
+import com.mahmoudbashir.shopapp.adapters.featured_Adapter
 
 class Home_Fragment : Fragment() {
 
     lateinit var drawer:DrawerLayout
     lateinit var open_menu:ImageView
     lateinit var nav_view:NavigationView
+    lateinit var cat_adapter:categories_Adapter
+    lateinit var rec_categories:RecyclerView
+    lateinit var rec_featured:RecyclerView
+    lateinit var rec_best_sell:RecyclerView
+    lateinit var feat_adapter:featured_Adapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,12 +36,46 @@ class Home_Fragment : Fragment() {
         drawer = v.findViewById(R.id.drawer_layout)
         open_menu = v.findViewById(R.id.open_menu)
         nav_view  = v.findViewById(R.id.nav_view)
+        rec_categories = v.findViewById(R.id.rec_categories)
+        rec_featured = v.findViewById(R.id.rec_featured)
+        rec_best_sell = v.findViewById(R.id.rec_best_sell)
 
         initializationHeader()
+        setUpCategoriesRec()
+        setUpFeaturedRec()
+
         open_menu.setOnClickListener {
             drawer.open()
         }
+
+
+
+
+
         return v
+    }
+
+    private fun setUpFeaturedRec() {
+        feat_adapter = featured_Adapter()
+        rec_featured.apply {
+            setHasFixedSize(true)
+            adapter = feat_adapter
+        }
+
+        feat_adapter = featured_Adapter()
+        rec_best_sell.apply {
+            setHasFixedSize(true)
+            adapter = feat_adapter
+        }
+    }
+
+    private fun setUpCategoriesRec(){
+        cat_adapter = categories_Adapter()
+        rec_categories.apply {
+            setHasFixedSize(true)
+            adapter = cat_adapter
+        }
+
     }
     private fun initializationHeader(){
         //init for Nav Header

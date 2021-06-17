@@ -1,6 +1,4 @@
 
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 
@@ -17,15 +15,9 @@ z
 Japp/src/main/java/com/mahmoudbashir/shopapp/fragments/Featured_Fragment.kt,f\5\f5e30bfc383559e382fa4f8796dfe617254a062c
 v
 Fapp/src/main/java/com/mahmoudbashir/shopapp/fragments/Cart_Fragment.kt,7\b\7b07ec85d011bcccbd785497abdf111a89d8b6c8
-v
-Fapp/src/main/java/com/mahmoudbashir/shopapp/fragments/Home_Fragment.kt,6\5\653a03ef44132bbdb65ebbc99d4875166ab8e754
-n
->app/src/main/java/com/mahmoudbashir/shopapp/ui/MainActivity.kt,a\7\a7117ad3ae274ab79ebfde78fc9fec0971e58909
 y
 Iapp/src/main/java/com/mahmoudbashir/shopapp/fragments/Profile_Fragment.kt,7\3\73f1da7fb26ca068b04e68a2c1b3b4f92e28ecdb
 {
 Kapp/src/main/java/com/mahmoudbashir/shopapp/fragments/Favourite_Fragment.kt,d\a\da07d2c8bdd81f27cfad8a91a0ea17f8d9430d97
 x
 Happ/src/main/java/com/mahmoudbashir/shopapp/fragments/Orders_Fragment.kt,c\f\cfd17366eb5cb721dc4e59b7cb35c0adbc540f1a
-t
-Dapp/src/main/java/com/mahmoudbashir/shopapp/Confirmation_Fragment.kt,a\e\aec323257e878a99e2de9dbd10613943cc4b693b

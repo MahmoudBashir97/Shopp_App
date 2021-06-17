@@ -5,12 +5,20 @@
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
     <RelativeLayout
         android:id="@+id/rel_bar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:padding="5dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         >
         <ImageView
             android:id="@+id/open_menu"
@@ -189,4 +197,6 @@
             tools:listitem="@layout/single_product_item"
             />
     </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

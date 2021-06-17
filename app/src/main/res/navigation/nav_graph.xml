@@ -114,12 +114,17 @@
         tools:layout="@layout/fragment_favourite_" />
     <fragment
         android:id="@+id/confirmation_Fragment"
-        android:name="com.mahmoudbashir.shopapp.Confirmation_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Confirmation_Fragment"
         android:label="fragment_confirmation_"
         tools:layout="@layout/fragment_confirmation_" />
     <fragment
         android:id="@+id/checkout_Fragment"
-        android:name="com.mahmoudbashir.shopapp.Checkout_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Checkout_Fragment"
         android:label="fragment_checkout_"
         tools:layout="@layout/fragment_checkout_" />
+    <fragment
+        android:id="@+id/address_Fragment"
+        android:name="com.mahmoudbashir.shopapp.fragments.Address_Fragment"
+        android:label="fragment_address_"
+        tools:layout="@layout/fragment_address_" />
 </navigation>
