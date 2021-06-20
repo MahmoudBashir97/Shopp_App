@@ -27,6 +27,7 @@ class Home_Fragment : Fragment() {
     lateinit var rec_featured:RecyclerView
     lateinit var rec_best_sell:RecyclerView
     lateinit var feat_adapter:featured_Adapter
+    lateinit var to_featured:TextView
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,10 +40,13 @@ class Home_Fragment : Fragment() {
         rec_categories = v.findViewById(R.id.rec_categories)
         rec_featured = v.findViewById(R.id.rec_featured)
         rec_best_sell = v.findViewById(R.id.rec_best_sell)
+        to_featured = v.findViewById(R.id.to_featured)
 
         initializationHeader()
         setUpCategoriesRec()
         setUpFeaturedRec()
+        navigatToFeaturedScreen()
+
 
         open_menu.setOnClickListener {
             drawer.open()
@@ -50,9 +54,13 @@ class Home_Fragment : Fragment() {
 
 
 
-
-
         return v
+    }
+
+    private fun navigatToFeaturedScreen() {
+        to_featured.setOnClickListener {
+            findNavController().navigate(Home_FragmentDirections.actionHomeFragmentToFeaturedFragment())
+        }
     }
 
     private fun setUpFeaturedRec() {

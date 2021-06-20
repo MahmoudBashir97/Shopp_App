@@ -22,7 +22,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_layout"
-        android:background="@color/white"
+        android:background="#FFFFFF"
         app:itemTextColor="#FFFFFF"
         app:itemIconTint="#FFFFFF"
         />

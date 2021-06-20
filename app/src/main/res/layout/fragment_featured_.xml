@@ -61,6 +61,7 @@
             android:layout_below="@+id/txt_f"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:listitem="@layout/single_product_item"
-            app:spanCount="2" />
+            app:spanCount="2"
+            />
     </RelativeLayout>
 </layout>

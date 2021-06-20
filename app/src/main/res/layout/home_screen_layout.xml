@@ -35,7 +35,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/rel_bar"
-        android:layout_margin="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         app:cardMaxElevation="18dp"
         app:cardElevation="18dp">
         <RelativeLayout
@@ -64,7 +67,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@+id/search_btn_card"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -112,7 +115,8 @@
         android:orientation="vertical"
         android:layout_below="@+id/lin_cat"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -131,6 +135,7 @@
                 android:layout_centerVertical="true"/>
 
             <TextView
+                android:id="@+id/to_featured"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/seeAll_txt"
@@ -177,6 +182,7 @@
                 android:layout_centerVertical="true"/>
 
             <TextView
+                android:id="@+id/to_best_sell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/seeAll_txt"

@@ -8,20 +8,30 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.mahmoudbashir.shopapp.R
+import com.mahmoudbashir.shopapp.adapters.featured_Adapter
 import com.mahmoudbashir.shopapp.databinding.FragmentFeaturedBinding
 
 
 class Featured_Fragment : Fragment() {
 
+    lateinit var feat_adapter: featured_Adapter
     lateinit var featBinding: FragmentFeaturedBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         featBinding  = DataBindingUtil.inflate(inflater,R.layout.fragment_featured_, container, false)
+        setUpFeaturedRec()
         goBack()
 
         return featBinding.root
 
+    }
+    private fun setUpFeaturedRec() {
+        feat_adapter = featured_Adapter()
+        featBinding.recFeatured.apply {
+            setHasFixedSize(true)
+            adapter = feat_adapter
+        }
     }
 
     private fun goBack(){
