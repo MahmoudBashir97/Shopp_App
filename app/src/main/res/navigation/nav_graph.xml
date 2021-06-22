@@ -81,12 +81,27 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_Fragment_to_productDetails_Fragment"
+            app:destination="@id/productDetails_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/featured_Fragment"
         android:name="com.mahmoudbashir.shopapp.fragments.Featured_Fragment"
         android:label="fragment_featured_"
-        tools:layout="@layout/fragment_featured_" />
+        tools:layout="@layout/fragment_featured_" >
+        <action
+            android:id="@+id/action_featured_Fragment_to_productDetails_Fragment"
+            app:destination="@id/productDetails_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/cart_Fragment"
         android:name="com.mahmoudbashir.shopapp.fragments.Cart_Fragment"
@@ -111,7 +126,15 @@
         android:id="@+id/favourite_Fragment"
         android:name="com.mahmoudbashir.shopapp.fragments.Favourite_Fragment"
         android:label="fragment_favourite_"
-        tools:layout="@layout/fragment_favourite_" />
+        tools:layout="@layout/fragment_favourite_" >
+        <action
+            android:id="@+id/action_favourite_Fragment_to_productDetails_Fragment"
+            app:destination="@id/productDetails_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/confirmation_Fragment"
         android:name="com.mahmoudbashir.shopapp.fragments.Confirmation_Fragment"

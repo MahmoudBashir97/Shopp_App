@@ -16,8 +16,9 @@ import com.google.android.material.navigation.NavigationView
 import com.mahmoudbashir.shopapp.R
 import com.mahmoudbashir.shopapp.adapters.categories_Adapter
 import com.mahmoudbashir.shopapp.adapters.featured_Adapter
+import com.mahmoudbashir.shopapp.clicksInterface.ClickItemsInterface
 
-class Home_Fragment : Fragment() {
+class Home_Fragment : Fragment() ,ClickItemsInterface{
 
     lateinit var drawer:DrawerLayout
     lateinit var open_menu:ImageView
@@ -64,13 +65,13 @@ class Home_Fragment : Fragment() {
     }
 
     private fun setUpFeaturedRec() {
-        feat_adapter = featured_Adapter()
+        feat_adapter = featured_Adapter(this)
         rec_featured.apply {
             setHasFixedSize(true)
             adapter = feat_adapter
         }
 
-        feat_adapter = featured_Adapter()
+        feat_adapter = featured_Adapter(this)
         rec_best_sell.apply {
             setHasFixedSize(true)
             adapter = feat_adapter
@@ -128,5 +129,9 @@ class Home_Fragment : Fragment() {
         nav_settings.setOnClickListener {
             drawer.closeDrawer(GravityCompat.START)
         }
+    }
+
+    override fun onClickItem(index: Int) {
+        findNavController().navigate(Home_FragmentDirections.actionHomeFragmentToProductDetailsFragment())
     }
 }
