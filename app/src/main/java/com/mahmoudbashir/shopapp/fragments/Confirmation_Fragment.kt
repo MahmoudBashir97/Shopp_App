@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.mahmoudbashir.shopapp.R
 import com.mahmoudbashir.shopapp.databinding.FragmentConfirmationBinding
 
@@ -24,7 +25,7 @@ class Confirmation_Fragment : Fragment() {
     }
     private fun backToHome(){
         confBinding.backToHomeBtn.setOnClickListener {
-
+            findNavController().navigate(Confirmation_FragmentDirections.actionConfirmationFragmentToHomeFragment())
         }
     }
 }

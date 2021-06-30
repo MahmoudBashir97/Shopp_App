@@ -18,15 +18,21 @@ class Checkout_Fragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         checkBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_checkout_, container, false)
-        GoBack()
+        goBack()
+        buyDone_navigateToConfirmationScreen()
 
         return checkBinding.root
     }
 
-    private fun GoBack(){
+    private fun buyDone_navigateToConfirmationScreen() {
+       checkBinding.btnBuyDone.setOnClickListener {
+           findNavController().navigate(Checkout_FragmentDirections.actionCheckoutFragmentToConfirmationFragment())
+       }
+    }
+
+    private fun goBack(){
         checkBinding.btnBack.setOnClickListener {
             findNavController().navigateUp()
         }
     }
-
 }

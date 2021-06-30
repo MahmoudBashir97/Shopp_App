@@ -20,7 +20,15 @@ class ProductDetails_Fragment : Fragment() {
         prodetailsBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_product_details_, container, false)
 
         goBack()
+        navigateToBuyNow()
+
         return prodetailsBinding.root
+    }
+
+    private fun navigateToBuyNow() {
+        prodetailsBinding.buyNowBtn.setOnClickListener {
+        findNavController().navigate(ProductDetails_FragmentDirections.actionProductDetailsFragmentToAddressFragment())
+        }
     }
 
     private fun goBack(){

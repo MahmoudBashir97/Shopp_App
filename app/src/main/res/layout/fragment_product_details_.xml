@@ -14,7 +14,9 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lin_btn_actions"
+            android:layout_marginBottom="5dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -30,19 +32,20 @@
 
                     <ImageView
                         android:id="@+id/btn_back"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:src="@drawable/ic_baseline_arrow_right_alt_24"
                         android:rotation="180"
                         app:tint="@color/main_txt_color" />
 
                     <ImageView
                         android:id="@+id/btn_search"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:src="@drawable/ic_baseline_search_24"
                         app:tint="@color/main_txt_color"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"/>
                 </RelativeLayout>
 
                 <ImageView
@@ -169,7 +172,7 @@
                         android:layout_marginBottom="10dp" />
 
                     <com.borjabravo.readmoretextview.ReadMoreTextView
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine."
@@ -202,7 +205,7 @@
                             android:layout_centerInParent="true">
 
                             <RadioButton
-                                android:layout_width="wrap_content"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:text="@string/select_size_txt"
                                 android:button="@color/radio_flat_text_selector_size"
@@ -211,13 +214,14 @@
                                 android:textColor="@color/radio_flat_text_selector_selection" />
 
                             <RadioButton
-                                android:layout_width="wrap_content"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:text="@string/select_color_txt"
                                 android:button="@color/radio_flat_text_selector_size"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginRight="15dp"
                                 android:textSize="18sp"
+                                android:visibility="gone"
                                 android:textColor="@color/radio_flat_text_selector_selection" />
                         </RadioGroup>
                     </RelativeLayout>
@@ -246,7 +250,6 @@
                                 android:text="S"
                                 android:button="@color/radio_flat_text_selector_size"
                                 android:textSize="18sp"
-                                android:checked="true"
                                 android:background="@drawable/radio_flat_selector"
                                 android:gravity="center"
                                 android:textColor="@color/radio_flat_text_selector_size" />
@@ -270,7 +273,6 @@
                                 android:button="@color/radio_flat_text_selector_size"
                                 android:textSize="18sp"
                                 android:gravity="center"
-                                android:checked="true"
                                 android:background="@drawable/radio_flat_selector"
                                 android:textColor="@color/radio_flat_text_selector_size" />
 
@@ -283,7 +285,6 @@
                                 android:layout_marginRight="15dp"
                                 android:textSize="18sp"
                                 android:gravity="center"
-                                android:checked="true"
                                 android:background="@drawable/radio_flat_selector"
                                 android:textColor="@color/radio_flat_text_selector_size" />
                         </RadioGroup>
@@ -295,8 +296,9 @@
         </ScrollView>
 
         <LinearLayout
+            android:id="@+id/lin_btn_actions"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
+            android:layout_height="45dp"
             android:orientation="horizontal"
             android:layout_alignParentBottom="true"
             android:weightSum="2">
@@ -307,8 +309,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#E1E1E1"
-                android:text="ADD TO CART"
-                android:textSize="18sp"
+                android:text="@string/add_to_cart_txt"
+                android:textSize="16sp"
                 android:textColor="@color/main_txt_color" />
 
             <Button
@@ -317,8 +319,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#667EEA"
-                android:text="BUY NOW"
-                android:textSize="18sp"
+                android:text="@string/buy_now_txt"
+                android:textSize="16sp"
                 android:textColor="@color/white" />
         </LinearLayout>
     </RelativeLayout>

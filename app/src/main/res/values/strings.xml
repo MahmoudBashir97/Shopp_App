@@ -61,9 +61,15 @@
     <string name="buy_txt">Buy</string>
 
     <!-- address fragment -->
-    <string name="address_txt">Address</string>
+    <string name="address_txt"> Address</string>
     <string name="add_address_txt">Add Address</string>
     <string name="continue_address_txt">Continue To Payment</string>
     <string name="portal_txt">Portal Code</string>
+    <string name="add_address_btn_txt">Add Address</string>
+
+
+
+    <!-- Payment fragment -->
+    <string name="payment_txt">Payment</string>
 
 </resources>

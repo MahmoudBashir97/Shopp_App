@@ -197,6 +197,7 @@
                     </LinearLayout>
 
                     <Button
+                        android:id="@+id/btn_buy_done"
                         android:layout_width="match_parent"
                         android:layout_height="?actionBarSize"
                         android:text="@string/buy_txt"
