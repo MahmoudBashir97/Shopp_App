@@ -5,8 +5,6 @@
 Oapp/src/main/java/com/mahmoudbashir/shopapp/fragments/WelcomeScreen_Fragment.kt,6\c\6c7de0fe5958ebc848e45db273a8308f60de24e6
 
 Oapp/src/main/java/com/mahmoudbashir/shopapp/fragments/Registeration_Fragment.kt,1\2\12202c7ead76b84841cde7625a8343eac884507d
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 y
 Iapp/src/main/java/com/mahmoudbashir/shopapp/fragments/Profile_Fragment.kt,7\3\73f1da7fb26ca068b04e68a2c1b3b4f92e28ecdb
 n
@@ -37,3 +35,9 @@ y
 Iapp/src/main/java/com/mahmoudbashir/shopapp/fragments/Address_Fragment.kt,5\2\5279e2cd25ccdb644690fc620ef89a9d814d74d3
 €
 Papp/src/main/java/com/mahmoudbashir/shopapp/fragments/PaymentMtehtod_Fragment.kt,6\8\6865dafd6f363d440d38a8c04bcc0f73e90dabed
+z
+Japp/src/main/java/com/mahmoudbashir/shopapp/fragments/Checkout_Fragment.kt,7\c\7c636050e913efbd7fab1d073c155580ecbd2339
+€
+Papp/src/main/java/com/mahmoudbashir/shopapp/fragments/ProductDetails_Fragment.kt,7\5\750c185405e037792adc3166594b997bc135d640
+~
+Napp/src/main/java/com/mahmoudbashir/shopapp/fragments/SplashScreen_fragment.kt,f\0\f0262dc20c0424e4a5115fac3bd275fa58adc78b
