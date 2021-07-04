@@ -1,0 +1,9 @@
+
+gkotlin:S101"QRename class "Home_Fragment" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(ÜØé(
+rkotlin:S117\"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(¯¸¶•úÿÿÿÿ
+rkotlin:S117]"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ì‘ÄÑûÿÿÿÿ
+lkotlin:S117^"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(´‰Ù|
+rkotlin:S117_"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(œô«Ìúÿÿÿÿ
+rkotlin:S117`"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(’Àèúÿÿÿÿ
+rkotlin:S117a"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ˆ¸ÆÌıÿÿÿÿ
+rkotlin:S117b"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(«æÿ¡şÿÿÿÿ
