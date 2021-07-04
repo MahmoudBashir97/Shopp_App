@@ -41,3 +41,7 @@ Japp/src/main/java/com/mahmoudbashir/shopapp/fragments/Checkout_Fragment.kt,7\c
 Papp/src/main/java/com/mahmoudbashir/shopapp/fragments/ProductDetails_Fragment.kt,7\5\750c185405e037792adc3166594b997bc135d640
 ~
 Napp/src/main/java/com/mahmoudbashir/shopapp/fragments/SplashScreen_fragment.kt,f\0\f0262dc20c0424e4a5115fac3bd275fa58adc78b
+~
+Napp/src/main/java/com/mahmoudbashir/shopapp/fragments/Confirmation_Fragment.kt,9\5\95f3c79ed6908dfaa091f14033e01611937206b5
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e

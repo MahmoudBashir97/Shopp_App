@@ -11,6 +11,25 @@
         android:layout_height="match_parent"
         tools:context=".fragments.SplashScreen_fragment"
         android:background="@color/blue_2">
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:background="@drawable/oval_logo_splash_back1"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/oval_logo_splash_back2"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_logo"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
 
 
     </RelativeLayout>
